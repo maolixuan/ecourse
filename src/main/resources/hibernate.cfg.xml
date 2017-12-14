@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="connection.url"><![CDATA[jdbc:mysql://localhost:3306/ecourse?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]></property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="com.ecourse.entity.EcAnswer"/>
+        <mapping class="com.ecourse.entity.EcCheck"/>
+        <mapping class="com.ecourse.entity.EcCourse"/>
+        <mapping class="com.ecourse.entity.EcMessage"/>
+        <mapping class="com.ecourse.entity.EcNotice"/>
+        <mapping class="com.ecourse.entity.EcNoticeView"/>
+        <mapping class="com.ecourse.entity.EcQuestion"/>
+        <mapping class="com.ecourse.entity.EcSource"/>
+        <mapping class="com.ecourse.entity.EcStcheck"/>
+        <mapping class="com.ecourse.entity.EcStuandcourse"/>
+        <mapping class="com.ecourse.entity.EcTest"/>
+        <mapping class="com.ecourse.entity.EcUnderstand"/>
+        <mapping class="com.ecourse.entity.EcUnderstandSelect"/>
+        <mapping class="com.ecourse.entity.EcUser"/>
+        <!-- 配置二级缓存相关 -->
+    </session-factory>
+</hibernate-configuration>
