@@ -7,7 +7,7 @@ import javax.persistence.*;
  * @create 2017-12-13 下午11:31
  */
 @Entity
-@Table(name = "ec_answer", schema = "ecourse", catalog = "")
+@Table(name = "ec_answer", schema = "ecourse")
 public class EcAnswer {
     private int ansId;
     private Integer userId;
